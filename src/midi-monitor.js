@@ -1,6 +1,7 @@
+import noteToString from './note-convert.js';
+
 function onMIDISuccess(midi) {
   const inputs = midi.inputs.values();
-
   for (let input = inputs.next(); input && !input.done; input = inputs.next()) {
     input.value.onmidimessage = onMIDIMessage;
   }
@@ -26,6 +27,7 @@ function noteOff(noteNumber) {
 
 window.onload = () => {
   if (navigator.requestMIDIAccess) {
+
     navigator.requestMIDIAccess({
       sysex: false
     }).then(onMIDISuccess, onMIDIFailure);

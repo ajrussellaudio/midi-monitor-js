@@ -1,0 +1,23 @@
+{
+  "name": "web-midi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajrussellaudio/midi-monitor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajrussellaudio/midi-monitor/issues"
+  },
+  "homepage": "https://github.com/ajrussellaudio/midi-monitor#readme",
+  "devDependencies": {
+    "webpack": "^3.3.0"
+  }
+}

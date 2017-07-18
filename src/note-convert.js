@@ -1,4 +1,4 @@
-function noteToString(midi) {
+export default function noteToString(midi) {
   return pitch(midi) + octave(midi)
 }
 
