@@ -7,7 +7,7 @@ function onMIDISuccess(midi) {
 }
 
 function onMIDIFailure(e) {
-  console.log("No access to MIDI devices.")
+  alert("No access to MIDI devices.")
 }
 
 function onMIDIMessage(message) {
