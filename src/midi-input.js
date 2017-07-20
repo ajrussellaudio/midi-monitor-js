@@ -1,6 +1,10 @@
 export default class MIDIInput {
   constructor(onMIDIMessage) {
     this.onMIDIMessage = onMIDIMessage;
+    requestMIDIAccess();
+  }
+
+  requestMIDIAccess() {
     if (navigator.requestMIDIAccess) {
       navigator.requestMIDIAccess({
         sysex: false
