@@ -9,8 +9,8 @@ export default class MIDIInput {
       navigator.requestMIDIAccess({
         sysex: false
       }).then(
-          this.onMIDISuccess.bind(this), 
-          this.onMIDIFailure.bind(this)
+        this.onMIDISuccess.bind(this), 
+        this.onMIDIFailure.bind(this)
       );
     } else {
       alert("No MIDI support in your browser!");
@@ -24,7 +24,7 @@ export default class MIDIInput {
     }
   }
 
-  onMIDIFailure(e) {
-    alert("No access to MIDI devices.")
+  onMIDIFailure() {
+    alert("No access to MIDI devices.");
   }
 }

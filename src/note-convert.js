@@ -1,5 +1,5 @@
 export default function noteToString(midi) {
-  return pitch(midi) + octave(midi)
+  return pitch(midi) + octave(midi);
 }
 
 function pitch(midi) {

@@ -1,4 +1,4 @@
-import noteToString from './note-convert.js';
+// import noteToString from "./note-convert.js";
 
 export default class MIDIMessage {
 
@@ -20,6 +20,6 @@ export default class MIDIMessage {
       _status: this.status,
       _data1: this.data1,
       _data2: this.data2
-    }
+    };
   }
 }
