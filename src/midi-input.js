@@ -1,7 +1,7 @@
 export default class MIDIInput {
   constructor(onMIDIMessage) {
     this.onMIDIMessage = onMIDIMessage;
-    requestMIDIAccess();
+    this.requestMIDIAccess();
   }
 
   requestMIDIAccess() {
